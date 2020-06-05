@@ -1,0 +1,10 @@
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\DetectProvidedName.deps.json
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\DetectProvidedName.runtimeconfig.json
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\DetectProvidedName.runtimeconfig.dev.json
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\DetectProvidedName.dll
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\DetectProvidedName.pdb
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\DetectProvidedName.csprojAssemblyReference.cache
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\DetectProvidedName.AssemblyInfoInputs.cache
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\DetectProvidedName.AssemblyInfo.cs
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\DetectProvidedName.dll
+C:\Users\Saso\Desktop\C#Recap\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\DetectProvidedName.pdb
