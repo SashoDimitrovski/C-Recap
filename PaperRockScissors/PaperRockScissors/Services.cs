@@ -28,7 +28,6 @@ namespace PaperRockScissors
                         Console.WriteLine($"The Player chose {PRS.Scissors}");
                     }
 
-
                     return number;
                 }
                 else
@@ -61,7 +60,7 @@ namespace PaperRockScissors
             }
             return randomNo;
         }
-        public static int WhoWins(int player, int computer)
+        public static void WhoWins(int player, int computer)
         {
             int scorePlayer = 0;
             int scoreComp = 0;
@@ -69,37 +68,32 @@ namespace PaperRockScissors
             {
                 Console.WriteLine("Player wins!");
                 scorePlayer++;
-                return scorePlayer;
+                
             }
             else if (player == 1 && computer == 3)
             {
                 Console.WriteLine("Computer wins!");
                 scoreComp++;
-                return scoreComp;
             }
             else if (player == 2 && computer == 3)
             {
                 Console.WriteLine("Player wins!");
                 scorePlayer++;
-                return scorePlayer;
             }
             else if (player == 2 && computer == 1)
             {
                 Console.WriteLine("Computer wins!");
                 scoreComp++;
-                return scoreComp;
             }
             else if (player == 3 && computer == 1)
             {
                 Console.WriteLine("Player wins!");
                 scorePlayer++;
-                return scorePlayer;
             }
             else if (player == 3 && computer == 2)
             {
                 Console.WriteLine("Computer wins!");
                 scoreComp++;
-                return scoreComp;
             }
             else if (player == 1 && computer == 1)
             {
@@ -115,22 +109,19 @@ namespace PaperRockScissors
             }
             Console.WriteLine($"The score is Player - {scorePlayer} : Computer - {scoreComp}");
         }
-        public static void PlayAgain()
+        public static bool PlayAgain()
         {
             while (true)
             {
-                Console.WriteLine("Would you like to play again?\n 1. Yes\n 2. No");
-                string yesNoInput = Console.ReadLine();
-                int playYesNo = 0;
-                playYesNo = int.Parse(yesNoInput);
-                if (playYesNo == 2)
-                {
-                    break;
-                }
-                
+                Console.WriteLine("Would you like to play again? Y/N");
+                string yesNoInput = Console.ReadLine().ToLower();
+                if (yesNoInput.ToLower() == "y") return true;
+                if (yesNoInput.ToLower() == "n") return false;
+
             }
+
             
-            
+
         }
     }
 }

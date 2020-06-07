@@ -15,9 +15,13 @@ namespace PaperRockScissors
                 Console.WriteLine("Please select\n 1. Paper \n 2. Rock \n 3. Scissors");
                 Services.UserInput(Console.ReadLine());
                 Services.ComputerPick();
-                Services.PlayAgain();
-                Services.WhoWins();
-                Console.Clear();
+                Services.WhoWins(Services.UserInput(Console.ReadLine()), Services.ComputerPick());
+                if (Services.PlayAgain()== false){
+                    break;
+                }
+                
+
+                
                 Console.ReadLine();
             }
             
