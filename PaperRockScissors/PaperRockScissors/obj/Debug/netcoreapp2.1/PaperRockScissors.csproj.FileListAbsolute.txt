@@ -3,7 +3,6 @@ C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\bin\Debug\netc
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\bin\Debug\netcoreapp2.1\PaperRockScissors.runtimeconfig.dev.json
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\bin\Debug\netcoreapp2.1\PaperRockScissors.dll
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\bin\Debug\netcoreapp2.1\PaperRockScissors.pdb
-C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.csprojAssemblyReference.cache
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.AssemblyInfoInputs.cache
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.AssemblyInfo.cs
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.dll

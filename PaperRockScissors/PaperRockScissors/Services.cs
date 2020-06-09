@@ -6,6 +6,8 @@ namespace PaperRockScissors
 {
     public class Services
     {
+        
+
         public static int UserInput(string input)
         {
             int number;
@@ -62,38 +64,40 @@ namespace PaperRockScissors
         }
         public static void WhoWins(int player, int computer)
         {
-            int scorePlayer = 0;
-            int scoreComp = 0;
+            //int scorePlayer = 0;
+            //int scoreComp = 0;
+            
             if (player == 1 && computer == 2)
             {
                 Console.WriteLine("Player wins!");
-                scorePlayer++;
+                
+                //scorePlayer++;
                 
             }
             else if (player == 1 && computer == 3)
             {
                 Console.WriteLine("Computer wins!");
-                scoreComp++;
+                //scoreComp++;
             }
             else if (player == 2 && computer == 3)
             {
                 Console.WriteLine("Player wins!");
-                scorePlayer++;
+                //scorePlayer++;
             }
             else if (player == 2 && computer == 1)
             {
                 Console.WriteLine("Computer wins!");
-                scoreComp++;
+                //scoreComp++;
             }
             else if (player == 3 && computer == 1)
             {
                 Console.WriteLine("Player wins!");
-                scorePlayer++;
+                //scorePlayer++;
             }
             else if (player == 3 && computer == 2)
             {
                 Console.WriteLine("Computer wins!");
-                scoreComp++;
+                //scoreComp++;
             }
             else if (player == 1 && computer == 1)
             {
@@ -107,7 +111,7 @@ namespace PaperRockScissors
             {
                 Console.WriteLine("Draw!");
             }
-            Console.WriteLine($"The score is Player - {scorePlayer} : Computer - {scoreComp}");
+            //Console.WriteLine($"The score is Player - {scorePlayer} : Computer - {scoreComp}");
         }
         public static bool PlayAgain()
         {
