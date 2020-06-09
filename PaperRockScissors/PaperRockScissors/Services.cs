@@ -62,56 +62,74 @@ namespace PaperRockScissors
             }
             return randomNo;
         }
-        public static void WhoWins(int player, int computer)
+        public static void WhoWins(int player, int computer, Player playerA, Computer playerB, Games numberOfGames)
         {
-            //int scorePlayer = 0;
-            //int scoreComp = 0;
             
             if (player == 1 && computer == 2)
             {
                 Console.WriteLine("Player wins!");
-                
-                //scorePlayer++;
-                
+                playerA.PlayerScore += 1;
+                numberOfGames.GamesNo += 1;
+                Console.WriteLine($"The player has {(playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+
+
             }
             else if (player == 1 && computer == 3)
             {
                 Console.WriteLine("Computer wins!");
-                //scoreComp++;
+                playerB.ComputerScore += 1;
+                numberOfGames.GamesNo += 1;
+                Console.WriteLine($"The Computer has {(playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 2 && computer == 3)
             {
                 Console.WriteLine("Player wins!");
-                //scorePlayer++;
+                playerA.PlayerScore += 1;
+                numberOfGames.GamesNo += 1;
+                Console.WriteLine($"The player has {(playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 2 && computer == 1)
             {
                 Console.WriteLine("Computer wins!");
-                //scoreComp++;
+                playerB.ComputerScore += 1;
+                numberOfGames.GamesNo += 1;
+                Console.WriteLine($" The Computer has {(playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 3 && computer == 1)
             {
                 Console.WriteLine("Player wins!");
-                //scorePlayer++;
+                playerA.PlayerScore += 1;
+                numberOfGames.GamesNo += 1;
+                Console.WriteLine($"The player has {(playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 3 && computer == 2)
             {
                 Console.WriteLine("Computer wins!");
-                //scoreComp++;
+                playerB.ComputerScore += 1;
+                numberOfGames.GamesNo += 1;
+                Console.WriteLine($"The Computer has {(playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 1 && computer == 1)
             {
                 Console.WriteLine("Draw!");
+                numberOfGames.GamesNo += 1;
+                
             }
             else if (player == 2 && computer == 2)
             {
                 Console.WriteLine("Draw!");
+                numberOfGames.GamesNo += 1;
+                
             }
             else if (player == 3 && computer == 3)
             {
                 Console.WriteLine("Draw!");
+                numberOfGames.GamesNo += 1;
+                
             }
-            //Console.WriteLine($"The score is Player - {scorePlayer} : Computer - {scoreComp}");
+            Console.WriteLine($"The score is Player - {playerA.PlayerScore} : Computer - {playerB.ComputerScore}");
+            Console.WriteLine($"Total games played - {numberOfGames.GamesNo}");
+            
         }
         public static bool PlayAgain()
         {

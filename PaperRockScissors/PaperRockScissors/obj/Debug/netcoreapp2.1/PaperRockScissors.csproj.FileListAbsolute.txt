@@ -7,3 +7,4 @@ C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netc
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.AssemblyInfo.cs
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.dll
 C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.pdb
+C:\Users\Saso\Desktop\C#Recap\PaperRockScissors\PaperRockScissors\obj\Debug\netcoreapp2.1\PaperRockScissors.csprojAssemblyReference.cache
