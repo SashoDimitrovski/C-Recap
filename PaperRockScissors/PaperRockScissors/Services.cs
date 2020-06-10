@@ -62,7 +62,7 @@ namespace PaperRockScissors
             }
             return randomNo;
         }
-        public static void WhoWins(int player, int computer, Player playerA, Computer playerB, Games numberOfGames)
+        public static void WhoWins(int player, int computer, Player playerA, Computer playerB, Games numberOfGames, Draw draw, Percent prc)
         {
             
             if (player == 1 && computer == 2)
@@ -70,7 +70,8 @@ namespace PaperRockScissors
                 Console.WriteLine("Player wins!");
                 playerA.PlayerScore += 1;
                 numberOfGames.GamesNo += 1;
-                Console.WriteLine($"The player has {(playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The Computer has {prc.Percentage =  (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
 
 
             }
@@ -79,58 +80,73 @@ namespace PaperRockScissors
                 Console.WriteLine("Computer wins!");
                 playerB.ComputerScore += 1;
                 numberOfGames.GamesNo += 1;
-                Console.WriteLine($"The Computer has {(playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 2 && computer == 3)
             {
                 Console.WriteLine("Player wins!");
                 playerA.PlayerScore += 1;
                 numberOfGames.GamesNo += 1;
-                Console.WriteLine($"The player has {(playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 2 && computer == 1)
             {
                 Console.WriteLine("Computer wins!");
                 playerB.ComputerScore += 1;
                 numberOfGames.GamesNo += 1;
-                Console.WriteLine($" The Computer has {(playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 3 && computer == 1)
             {
                 Console.WriteLine("Player wins!");
                 playerA.PlayerScore += 1;
                 numberOfGames.GamesNo += 1;
-                Console.WriteLine($"The player has {(playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / (numberOfGames.GamesNo)) * 100} % wins");
+                //Console.WriteLine($"The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 3 && computer == 2)
             {
                 Console.WriteLine("Computer wins!");
                 playerB.ComputerScore += 1;
                 numberOfGames.GamesNo += 1;
-                Console.WriteLine($"The Computer has {(playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins");
+                //Console.WriteLine($"The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
             }
             else if (player == 1 && computer == 1)
             {
                 Console.WriteLine("Draw!");
                 numberOfGames.GamesNo += 1;
+                draw.DrawGames += 1;
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo ) * 100} % wins. The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
                 
             }
             else if (player == 2 && computer == 2)
             {
                 Console.WriteLine("Draw!");
                 numberOfGames.GamesNo += 1;
-                
+                draw.DrawGames += 1;
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo) * 100} % wins. The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
+
             }
             else if (player == 3 && computer == 3)
             {
                 Console.WriteLine("Draw!");
                 numberOfGames.GamesNo += 1;
-                
+                draw.DrawGames += 1;
+                //Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / numberOfGames.GamesNo ) * 100} % wins. The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins. Total draw games {draw.DrawGames}");
+
             }
             Console.WriteLine($"The score is Player - {playerA.PlayerScore} : Computer - {playerB.ComputerScore}");
             Console.WriteLine($"Total games played - {numberOfGames.GamesNo}");
-            
+            Console.WriteLine($"The player has {prc.Percentage = (playerA.PlayerScore / (numberOfGames.GamesNo)) * 100} % wins");
+            Console.WriteLine($"The Computer has {prc.Percentage = (playerB.ComputerScore / numberOfGames.GamesNo) * 100} % wins");
+
+
         }
+        
         public static bool PlayAgain()
         {
             while (true)
